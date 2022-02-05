@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.container{
+    background-image: url(./background.jpg);
+    background-size: 100vw 100vh;
+    background-repeat:  no-repeat;
+    /* background: no cover; */
+    width:100%;
+    height: 100vh;
+}
+.dragon{
+    background-image: url(./dragon.png);
+    /* background-repeat:  no-repeat; */
+    background-size: cover;
+        width: 157px;
+    height: 106px;
+    position: absolute;
+    bottom: 0px;
+    left: 85vw;
+
+}
+.dinoLeft{
+    transform: scaleX(-1);
+}
+.restart{
+    display: none;
+    width: 226px;
+    height: 34px;
+    border: 1px solid;
+    text-align: center;
+    align-items: center;
+    background-color: khaki;
+    position: absolute;
+    left: 47vw;
+    top: 43vh;
+}
+.dino{
+    background-image: url(./dino.png);
+     background-size: cover;
+   width: 181px;
+    height: 88px;
+    position: absolute;
+    bottom: 0px;
+    left: 6vw;
+
+}
+.gameOver{
+    position: absolute;
+    left: 35vw;
+    font-size: 33px;
+    color: aliceblue;
+    font-family: sans-serif;
+}
+.gameOverRed{
+    color: red;
+    left: 37vw;
+}
+.score{
+        position: absolute;
+    left: 92vw;
+    padding: 10px;
+    border-style: inset;
+}
+
+.animateDino{
+    animation: dino 0.6s linear ;
+}
+
+.animateDragon{
+    animation: animateDragon 5s linear infinite;
+}
+@keyframes dino {
+    0%{
+        bottom: 0px;
+    }
+    50%{
+        bottom: 200px;
+    }
+    100%{
+        bottom: 0px;
+    }
+}
+    @keyframes animateDragon {
+        
+    0%{
+    left:100vw;
+    }
+    100%{
+    left: -5vw;
+
+    }
+    }
